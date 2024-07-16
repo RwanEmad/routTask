@@ -1,0 +1,36 @@
+@media (max-width:575px) {
+    .w100{
+        width: 100%;
+    }
+}
+
+/*xs*/
+
+@media (min-width:575px) { 
+    .w100{
+        width: 100%;
+    }
+  
+}
+
+/*sm*/
+
+@media (min-width:767px) {
+
+  .col-md-3{
+    width: 25%;
+  }
+
+}
+
+/*md*/
+
+@media (min-width:991px) {
+ 
+}
+
+/*lg*/
+
+@media (min-width:1199px) {}
+
+/*xl*/

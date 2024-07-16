@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body>
+
+<section id="Home" class="pt-5">
+
+    <div class="container">
+        <div class="filter col-md-6 m-auto mb-5 d-flex">
+            <input id="searchInput" oninput="searchProduct(this.value)" placeholder="Filter by name..."  class=" me-2 w-100 mx-2" type="search" placeholder="Search" aria-label="Search">
+            <input  oninput="filterByAmount(this.value)" placeholder="Filter by transactions..."  class=" me-2 w-100 mx-2" type="search" placeholder="Search" aria-label="Search">
+       
+        </div>
+        <div class="row">
+            <div id="table" class="col-md-6">
+                 <div class="content ">
+                    <div id="customersHeader" class="row header p-2">
+                        <div class="col-md-6 text-center">
+                        <h5>Customer Name</h5>
+                        </div>
+                        <div class="col-md-6  border-start border-light text-center">
+                            <h5>Total Transaction Amount</h5>
+                        </div>
+                    </div>
+                    <div id="Data" class="row  border  border-wihte border-2 rounded-bottom-2 mt-2 py-2">
+                  
+                    
+                    </div>
+                        
+                 </div>
+            </div>
+             <div id="Details" class="col-md-6  ps-2 overflow-hidden">
+                <div class="container mt-5 pt-2 ms-5 ps-3 ">
+                    <div class="row position-relative">
+                        
+                           <div class="col-md-8 detailsTable">
+                            <i id="closeBtn" class=" fa-solid fa-x position-absolute "></i>
+                            <div class="pointer"></div>
+                                <div id="custName">
+
+                                </div>
+                                <div class="header row text-center">
+                                    
+                                    <div class="col-md-6">
+
+                                        <h6>date</h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>amount</h6>
+                                    </div>
+                                </div>
+                                <div id="transitionsdata" class="content row ">
+                                   
+                                </div>
+                            </div>
+                    </div>
+                         
+                </div>
+
+                <canvas id="myChart"></canvas>
+                <button onclick="defaultChart()" class="btn " type="reset">Reset</button>
+
+
+
+
+
+            </div>
+        </div>
+   
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
